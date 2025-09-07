@@ -14,28 +14,41 @@ let LevelsUl = document.querySelector("header ul");
 let TripleBar = document.querySelector("header i");
 let counter = 0 ;
 
-const words = [ "harbor", "lantern", "anchor", "temple", "glacier", "potion", "helmet",
-    "banner", "bridge", "shield", "palace", "pirate", "statue", "canyon", "throne", "forest",
-    "mirror", "saddle", "torch", "harvest", "vessel", "fortune", "compass", "copper", "market",
-    "sailor", "valley", "desire", "prince", "summit", "Suhila" ];
+const words = [
+  "bridge", "castle", "garden", "forest", "market", "village", "pirate", "dragon", "river", "island",
+  "helmet", "torch", "sword", "shield", "tower", "mirror", "ladder", "candle", "helmet", "crown",
+  "statue", "hunter", "sailor", "valley", "palace", "throne", "window", "bucket", "compass", "harbor" ];
 
 const descriptions = [
-    "A sheltered body of water where ships dock for safety or trade.", "A portable light source protected by glass or metal casing.",
-    "A heavy device dropped into water to keep a ship in place.", "A sacred building devoted to spiritual worship or ritual.", 
-    "A massive body of ice that moves slowly over land.", "A magical liquid believed to have special effects when consumed.",
-    "A hard covering worn to protect the head in danger or battle.", "A flag or cloth hung to represent identity, power, or message.", 
-    "A structure allowing passage across rivers, valleys, or obstacles.", "A broad piece of armor carried to block attacks.",
-    "A grand residence where rulers or nobles once lived.", "A seafaring thief who plunders ships and coasts.", 
-    "A carved figure of stone or metal created to honor or remember.", "A deep gorge formed by erosion, with steep sides of rock.", 
-    "An ornate seat that symbolizes royal power and authority.", "A large area filled with dense trees and wildlife.",
-    "A smooth surface that reflects an image back to the viewer.",
-    "A seat fastened on an animal’s back to ride it.", "A stick with a flame used for light or signal.",
-    "The gathering of crops after they have grown and ripened.", "A container designed to hold liquid or transport cargo.",
-    "An unexpected turn of luck, wealth, or destiny.", "An instrument that shows direction using Earth’s magnetism.", 
-    "A reddish-brown metal often used in coins and wiring.", "A place where goods and produce are sold or traded.",
-    "A person who works on a ship and navigates the seas.", "A low landform lying between mountains or hills.", 
-    "A strong wish or longing for something not yet reached.", "A son of a king or queen, often an heir.",
-    "The highest point of a mountain or achievement.", "The love of my life. <3"
+  "It lets people go across water without swimming.",             // bridge
+  "A big home with walls, often for kings or lords.",             // castle
+  "A place where flowers and plants are carefully grown.",        // garden
+  "An area full of many trees close together.",                   // forest
+  "A busy place where people buy and sell things.",               // market
+  "A group of small houses where people live.",                   // village
+  "A robber of the seas who steals from ships.",                  // pirate
+  "A fire-breathing creature in old stories.",                    // dragon
+  "Water that flows across the land into the sea.",               // river
+  "Land with water all around it.",                               // island
+  "A hard cover to protect the head in battle.",                  // helmet
+  "A stick with fire used to give light.",                        // torch
+  "A long blade used in fights and battles.",                     // sword
+  "A flat piece of armor that blocks attacks.",                   // shield
+  "A tall building higher than those around it.",                 // tower
+  "It shows your face but it is not water.",                      // mirror
+  "Used for climbing up or down, not stairs.",                    // ladder
+  "A small stick of wax that burns to make light.",               // candle
+  "Clear glass that you look through on walls.",                  // window
+  "A golden circle worn on the head by a king or queen.",         // crown
+  "A figure of stone or metal made to remember.",                 // statue
+  "One who searches for and catches animals.",                    // hunter
+  "A man who works and travels on the sea.",                      // sailor
+  "Low land that lies between mountains or hills.",               // valley
+  "A large, rich home where rulers live.",                        // palace
+  "A special chair for a king or queen.",                         // throne
+  "Used to carry water or sand with a handle.",                   // bucket
+  "It points north and helps people not get lost.",               // compass
+  "A safe place where ships rest beside the land."                // harbor
 ];
 
 let WordIndex = localStorage.getItem("levels") || 0;
@@ -136,3 +149,4 @@ AgainBtn.addEventListener("click", function() {
 
 
 gameOverBtn.addEventListener("click", () => location.reload());
+
