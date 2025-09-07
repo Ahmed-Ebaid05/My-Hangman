@@ -98,13 +98,13 @@ letters.forEach((letter) => {
                             CongP.innerHTML = "Congratulations !!!";
                             WordSpan.innerHTML = `You Win !!!`;
                             NextBtn.style.cssText = "display: block;";
-                            setTimeout (() => { Ending.style.cssText = "display: flex; padding: 100px 0; justify-content: center; align-items: center;" }, 1000 );                 
+                            setTimeout (() => { Ending.style.cssText = "display: flex; justify-content: center; align-items: center;" }, 1000 );                 
                         } else if (counter === word.length) {
                             CongP.innerHTML = "Congratulations !!!";
                             WordSpan.innerHTML = `You Win !!!`;
                             LastLevel.style.cssText = "display: block;";
                             AgainBtn.style.cssText = "display: block;";
-                            setTimeout (() => { Ending.style.cssText = "display: flex; padding: 100px 0" }, 1000 );    
+                            setTimeout (() => { Ending.style.cssText = "display: flex;" }, 1000 );    
                         }
                     }
                 }
@@ -133,5 +133,6 @@ AgainBtn.addEventListener("click", function() {
     localStorage.setItem("levels", 0);
     location.reload();
 })
+
 
 gameOverBtn.addEventListener("click", () => location.reload());
