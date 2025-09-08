@@ -17,7 +17,7 @@ let counter = 0 ;
 const words = [
   "bridge", "castle", "garden", "forest", "market", "village", "pirate", "dragon", "river", "island",
   "helmet", "torch", "sword", "shield", "tower", "mirror", "ladder", "candle", "helmet", "crown",
-  "statue", "hunter", "sailor", "valley", "palace", "throne", "window", "bucket", "compass", "harbor" ];
+  "statue", "hunter", "sailor", "valley", "palace", "throne", "window", "bucket", "compass", "harbor", "suhila" ];
 
 const descriptions = [
   "It lets people go across water without swimming.",             // bridge
@@ -48,7 +48,8 @@ const descriptions = [
   "A special chair for a king or queen.",                         // throne
   "Used to carry water or sand with a handle.",                   // bucket
   "It points north and helps people not get lost.",               // compass
-  "A safe place where ships rest beside the land."                // harbor
+  "A safe place where ships rest beside the land.",               // harbor
+  "The love of my life."
 ];
 
 let WordIndex = localStorage.getItem("levels") || 0;
@@ -149,4 +150,5 @@ AgainBtn.addEventListener("click", function() {
 
 
 gameOverBtn.addEventListener("click", () => location.reload());
+
 
